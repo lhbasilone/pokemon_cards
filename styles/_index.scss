@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+// header{
+//     position: fixed;
+//     width: 100%;
+// }
+
+body{
+    background-image: url(..//img/bg.png), /*linear-gradient(left, rgba(27, 59, 61, 0.199), rgba(31, 29, 29, 0.26)),*/ ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.nav{
+    width: auto;
+    margin: 0px 10px 0px 10px;
+    height: 80px;
+    background-color: rgb(4, 5, 63);
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.nav h2{
+    font-family: $font1;
+    display: flex;
+    margin: auto;
+    font-size: 75px;
+    color: rgb(253, 241, 169);
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.bg{
+    // width: 100%;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 80%;
+    // height: 100vh;
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 350px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+    border-radius: 1.5em/2em;
+    box-shadow: 0px 10px 13px -4px rgba(0, 0, 0, 0.712), -10px 10px 5px -5px rgba(57, 57, 58, 0.349);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 700ms;
+
+}
+
+.flip {
+    background-color: transparent;
+    width: 105px;
+    height: 660px;
+    perspective: 1000px;
+}
+
+
+.flip-card {
+    box-shadow: 12px 5px 8px -5px rgba(0, 0, 0, 0.068), 12px 5px 8px -5px rgba(0, 0, 0, 0.226);
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    transition: 700ms;  
+    
+}
+
+
+.flip-card-front, 
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flip-card-back {
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    font-family: $font2;
+}
+
+.card__name {
+    height: 600px;
+    color: black;
+    letter-spacing: 0px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: $font1;
+    writing-mode: vertical-rl;
+    padding-top: 10px;
+    backface-visibility: hidden;
+    text-align: start;
+}
+
+.card__num {
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: $font1;
+    margin-top: 0px;
+    margin-left: 5px;
+    overflow-wrap: break-word;
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+
+
+.back__name h4{
+    margin-top: 35px;
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.back__name h5{
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+.back__text h5{
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.back__text p{
+    margin-top: 10px;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align:start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.back__text ul{
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+.back__text ul h6{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.back__text ul li{
+    
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+.sprite img{
+    margin-top: 25px;
+    max-width: 100%;
+    max-height: 100%;
+    transform: rotateY(0deg);
+}
+
+.sprite-back img{
+    margin-top: -50px;
+    max-width: 100%;
+    max-height: 100%;
+    transform: rotateY(0deg);
+}

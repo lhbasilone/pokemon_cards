@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(..//img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nav {
+  width: auto;
+  margin: 0px 10px 0px 10px;
+  height: 80px;
+  background-color: #04053f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.nav h2 {
+  font-family: "Bebas Neue";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  font-size: 75px;
+  color: #fdf1a9;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.863);
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+.container {
+  width: 350px;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-radius: 1.5em/2em;
+  -webkit-box-shadow: 0px 10px 13px -4px rgba(0, 0, 0, 0.712), -10px 10px 5px -5px rgba(57, 57, 58, 0.349);
+          box-shadow: 0px 10px 13px -4px rgba(0, 0, 0, 0.712), -10px 10px 5px -5px rgba(57, 57, 58, 0.349);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.flip {
+  background-color: transparent;
+  width: 105px;
+  height: 660px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.flip-card {
+  -webkit-box-shadow: 12px 5px 8px -5px rgba(0, 0, 0, 0.068), 12px 5px 8px -5px rgba(0, 0, 0, 0.226);
+          box-shadow: 12px 5px 8px -5px rgba(0, 0, 0, 0.068), 12px 5px 8px -5px rgba(0, 0, 0, 0.226);
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  font-family: "VT323";
+}
+
+.card__name {
+  height: 600px;
+  color: black;
+  letter-spacing: 0px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Bebas Neue";
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-top: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: start;
+}
+
+.card__num {
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Bebas Neue";
+  margin-top: 0px;
+  margin-left: 5px;
+  overflow-wrap: break-word;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+}
+
+.back__name h4 {
+  margin-top: 35px;
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.back__name h5 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.back__text h5 {
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.back__text p {
+  margin-top: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: start;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.back__text ul {
+  margin-top: 60px;
+  text-transform: uppercase;
+}
+
+.back__text ul h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.back__text ul li {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+.sprite img {
+  margin-top: 25px;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.sprite-back img {
+  margin-top: -50px;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.container:hover {
+  -webkit-box-shadow: 10px 20px 25px -15px rgba(0, 0, 0, 0.349), 11px 10px 5px -5px rgba(0, 0, 0, 0.349);
+          box-shadow: 10px 20px 25px -15px rgba(0, 0, 0, 0.349), 11px 10px 5px -5px rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.flip:hover .flip-card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-box-shadow: -12px 5px 8px -5px rgba(0, 0, 0, 0.521), -12px 5px 8px -5px rgba(0, 0, 0, 0.521);
+          box-shadow: -12px 5px 8px -5px rgba(0, 0, 0, 0.521), -12px 5px 8px -5px rgba(0, 0, 0, 0.521);
+}
+
+.bg .shine {
+  position: relative;
+}
+
+.bg .shine::before {
+  position: fixed;
+  top: -100px;
+  left: -100%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+
+.bg .shine:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
