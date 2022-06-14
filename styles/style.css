@@ -15,7 +15,7 @@ body {
   width: auto;
   margin: 0px 10px 0px 10px;
   height: 80px;
-  background-color: #04053f;
+  background-color: rgba(29, 31, 29, 0.651);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +151,7 @@ main {
 }
 
 .back__name h4 {
-  margin-top: 35px;
+  margin-top: 40px;
   font-size: 22px;
   letter-spacing: 1.2px;
   font-weight: 600;
@@ -159,9 +159,10 @@ main {
 }
 
 .back__name h5 {
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 .back__text h5 {
@@ -210,6 +211,24 @@ main {
   max-height: 100%;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+@media (max-width: 620px) {
+  .bg {
+    width: 100%;
+  }
+  .nav {
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav h2 {
+    font-size: 60px;
+  }
 }
 
 .container:hover {

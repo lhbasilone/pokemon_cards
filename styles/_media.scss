@@ -1,0 +1,17 @@
+@media (max-width: 620px ) {
+    .bg{
+        width: 100%;
+    }
+
+    .nav{
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+        height: 90px;
+        display: flex;
+
+        h2{
+            font-size: 60px;
+        }
+    }
+}
